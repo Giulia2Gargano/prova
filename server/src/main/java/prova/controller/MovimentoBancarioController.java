@@ -12,20 +12,15 @@ import prova.service.MovimentoBancarioService;
 
 @RestController
 @CrossOrigin("*")
-
-
 public class MovimentoBancarioController {
-	
+
 	@Autowired
 	MovimentoBancarioService movimentoBancarioService;
-	
+
 	@RequestMapping("calcola-dollari")
 	@ResponseBody
 	public MovimentoBancarioDto calcola(@RequestBody MovimentoBancarioDto dto) {
 		return null;
 	}
-	
-	
-	
 
 }
