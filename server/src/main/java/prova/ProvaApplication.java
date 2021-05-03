@@ -1,10 +1,10 @@
-package prova;
+package src.main.java.prova;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NicoloApplication {
+public class ProvaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(NicoloApplication.class, args);
