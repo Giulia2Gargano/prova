@@ -1,3 +1,4 @@
+<body>
 Data
 <input type="date" name="data" [(ngModel)]="movimentoBancario.data">
 <br>
@@ -10,7 +11,7 @@ Importo
 <input type="number" name="importo" [(ngModel)]="movimentoBancario.importo">
 <br>
 <br>
-<button (click)="aggiungi()">Aggiungi</button>
+<button class="bottone" (click)="aggiungi()">Aggiungi</button>
 <br>
 <br>
 <table *ngIf="array.length>0">
@@ -25,6 +26,7 @@ Importo
     <td> {{p.descrizione}} </td>
     <td> {{p.importo}} </td>
     <td> {{p.importoInDollari}} </td>
-    <button (click)="Elimina()">Elimina</button>
+    <button class="bottone" (click)="Elimina()">Elimina</button>
   </tr>
 </table>
+</body>
