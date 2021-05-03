@@ -1,43 +1,40 @@
+<div class="pagina">
+  <label for="data">Data</label>
+  <input type="date" name="data" [(ngModel)]="MovimentoBancario.data">
+  <br>
+  <br>
+  <label for="descrizione">Descrizione</label>
+  <input type="text" name="descrizione" [(ngModel)]="MovimentoBancario.descrizione">
+  <br>
+  <br>
+  <label for="importo">Importo</label>
+  <input type="number" name="importo" [(ngModel)]="MovimentoBancario.importo">
+  <br>
+  <br>
+  <button (click)="Aggiungi()">Aggiungi</button>
 
-<form action="">
-<label for="data">Data</label>
-<input type="date" name="data" [(ngModel)]="MovimentoBancario.data">
-<br>
-<br>
-<label for="descrizione">Descrizione</label>
-<input type="text" name="descrizione" [(ngModel)]="MovimentoBancario.descrizione">
-<br>
-<br>
-<label for="importo">Importo</label>
-<input type="number" name="importo" [(ngModel)]="MovimentoBancario.importo">
-<br>
-<br>
-<button (click)="Aggiungi()">Aggiungi</button>
-</form>
+  <br>
+  <br>
 
-<br>
-<br>
+  <table *ngIf="tabella">
 
-<table *ngIf="tabella">
-  <head>
-    <tr>
-      <th>Data</th>
-      <th>Descrizione</th>
-      <th>Importo Euro</th>
-      <th>Importo Dollari</th>
-    </tr>
-  </head>
-  <body>
-    <tr *ngFor="let p of MovimentoBancario">
-      <td> {{p.data}}  </td>
-      <td> {{p.descrizione}} </td>
-      <td> {{p.importo}} </td>
-      <td> {{p.importoInDollari}} </td>
-      <button (click)="Elimina()">Elimina</button>
-    </tr>
-  </body>
-</table>
+    <head>
+      <tr>
+        <th>Data</th>
+        <th>Descrizione</th>
+        <th>Importo Euro</th>
+        <th>Importo Dollari</th>
+      </tr>
+    </head>
 
-
-
-
+    <body>
+      <tr *ngFor="let p of MovimentoBancario">
+        <td> {{p.data}} </td>
+        <td> {{p.descrizione}} </td>
+        <td> {{p.importo}} </td>
+        <td> {{p.importoInDollari}} </td>
+        <button (click)="Elimina()">Elimina</button>
+      </tr>
+    </body>
+  </table>
+</div>
