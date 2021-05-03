@@ -1,14 +1,14 @@
 <div class="pagina">
   <label for="data">Data</label>
-  <input type="date" name="data" [(ngModel)]="MovimentoBancario.data">
+  <input type="date" name="data" [(ngModel)]="movimentoBancario.data">
   <br>
   <br>
   <label for="descrizione">Descrizione</label>
-  <input type="text" name="descrizione" [(ngModel)]="MovimentoBancario.descrizione">
+  <input type="text" name="descrizione" [(ngModel)]="movimentoBancario.descrizione">
   <br>
   <br>
   <label for="importo">Importo</label>
-  <input type="number" name="importo" [(ngModel)]="MovimentoBancario.importo">
+  <input type="number" name="importo" [(ngModel)]="movimentoBancario.importo">
   <br>
   <br>
   <button (click)="Aggiungi()">Aggiungi</button>
@@ -28,12 +28,12 @@
     </head>
 
     <body>
-      <tr *ngFor="let p of MovimentoBancario">
+      <tr *ngFor="let p of movimentoBancario,index as i">
         <td> {{p.data}} </td>
         <td> {{p.descrizione}} </td>
         <td> {{p.importo}} </td>
         <td> {{p.importoInDollari}} </td>
-        <button (click)="Elimina()">Elimina</button>
+        <button (click)="Elimina(i)">Elimina</button>
       </tr>
     </body>
   </table>
