@@ -1,4 +1,4 @@
-package src.main.java.prova;
+package prova;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ProvaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NicoloApplication.class, args);
+		SpringApplication.run(ProvaApplication.class, args);
 	}
 
 }
