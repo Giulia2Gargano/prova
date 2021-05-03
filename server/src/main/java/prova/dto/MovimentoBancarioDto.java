@@ -2,15 +2,15 @@ package prova.dto;
 
 import prova.model.MovimentoBancario;
 
-public class MovimentoBancarioResponseDto {
+public class MovimentoBancarioDto {
 
 	private MovimentoBancario movimentoBancario;
 
-	public MovimentoBancarioResponseDto() {
+	public MovimentoBancarioDto() {
 		super();
 	}
 
-	public MovimentoBancarioResponseDto(MovimentoBancario movimentoBancario) {
+	public MovimentoBancarioDto(MovimentoBancario movimentoBancario) {
 		super();
 		this.movimentoBancario = movimentoBancario;
 	}
@@ -25,8 +25,8 @@ public class MovimentoBancarioResponseDto {
 
 	@Override
 	public String toString() {
-		return "MovimentoBancarioResponseDto [movimentoBancario=" + movimentoBancario + "]";
+		return "MovimentoBancarioRequestDto [movimentoBancario=" + movimentoBancario + "]";
 	}
-
+	
 	
 }
