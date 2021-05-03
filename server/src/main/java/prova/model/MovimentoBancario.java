@@ -1,34 +1,31 @@
 package prova.model;
 
-import java.time.LocalDateTime;
-
+import java.time.LocalDate;
 
 public class MovimentoBancario {
 
-	private LocalDateTime data;
+	private LocalDate data;
 	private String descrizione;
 	private Double importo;
-	private Double importoInDollaro;
+	private Double importoInDollari;
 	
 	public MovimentoBancario() {
 		super();
 	}
 
-	
-	public MovimentoBancario(LocalDateTime data, String descrizione, Double importo, Double importoInDollaro) {
+	public MovimentoBancario(LocalDate data, String descrizione, Double importo, Double importoInDollari) {
 		super();
 		this.data = data;
 		this.descrizione = descrizione;
 		this.importo = importo;
-		this.importoInDollaro = importoInDollaro;
+		this.importoInDollari = importoInDollari;
 	}
 
-
-	public LocalDateTime getData() {
+	public LocalDate getData() {
 		return data;
 	}
 
-	public void setData(LocalDateTime data) {
+	public void setData(LocalDate data) {
 		this.data = data;
 	}
 
@@ -48,19 +45,19 @@ public class MovimentoBancario {
 		this.importo = importo;
 	}
 
-	public Double getImportoInDollaro() {
-		return importoInDollaro;
+	public Double getImportoInDollari() {
+		return importoInDollari;
 	}
 
-	public void setImportoInDollaro(Double importoInDollaro) {
-		this.importoInDollaro = importoInDollaro;
+	public void setImportoInDollari(Double importoInDollari) {
+		this.importoInDollari = importoInDollari;
 	}
 
 	@Override
 	public String toString() {
 		return "MovimentoBancario [data=" + data + ", descrizione=" + descrizione + ", importo=" + importo
-				+ ", importoInDollaro=" + importoInDollaro + "]";
+				+ ", importoInDollari=" + importoInDollari + "]";
 	}
 
-	
+  
 }

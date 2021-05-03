@@ -4,29 +4,30 @@ import prova.model.MovimentoBancario;
 
 public class MovimentoBancarioDto {
 
-	private MovimentoBancario movimentoBancario;
+	private MovimentoBancario movimento;
 
 	public MovimentoBancarioDto() {
 		super();
 	}
 
-	public MovimentoBancarioDto(MovimentoBancario movimentoBancario) {
+	public MovimentoBancarioDto(MovimentoBancario movimento) {
 		super();
-		this.movimentoBancario = movimentoBancario;
+		this.movimento = movimento;
 	}
 
-	public MovimentoBancario getMovimentoBancario() {
-		return movimentoBancario;
+	public MovimentoBancario getMovimento() {
+		return movimento;
 	}
 
-	public void setMovimentoBancario(MovimentoBancario movimentoBancario) {
-		this.movimentoBancario = movimentoBancario;
+	public void setMovimento(MovimentoBancario movimento) {
+		this.movimento = movimento;
 	}
 
 	@Override
 	public String toString() {
-		return "MovimentoBancarioRequestDto [movimentoBancario=" + movimentoBancario + "]";
+		return "MovimentoBancarioDto [movimento=" + movimento + "]";
 	}
 	
+	 
 	
 }

@@ -20,7 +20,9 @@ public class MovimentoBancarioController {
 	@RequestMapping("calcola-dollari")
 	@ResponseBody
 	public MovimentoBancarioDto calcola(@RequestBody MovimentoBancarioDto dto) {
+		System.out.println(dto);
 		return movimentoBancarioService.calcola(dto);
+		
 	}
 
 }
