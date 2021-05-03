@@ -1,5 +1,7 @@
 package prova.service;
 
-public interface MovimentoBancarioService {
+import prova.dto.MovimentoBancarioDto;
 
+public interface MovimentoBancarioService {
+	MovimentoBancarioDto calcola(MovimentoBancarioDto dto);
 }
