@@ -1,13 +1,16 @@
 
 <form action="">
 <label for="data">Data</label>
-<input type="date" name="data" [(ngModel)]="movimento.data">
+<input type="date" name="data" [(ngModel)]="MovimentoBancario.data">
+<br>
 <br>
 <label for="descrizione">Descrizione</label>
-<input type="text" name="descrizione" [(ngModel)]="movimento.descrizione">
+<input type="text" name="descrizione" [(ngModel)]="MovimentoBancario.descrizione">
+<br>
 <br>
 <label for="importo">Importo</label>
-<input type="number" name="importo" [(ngModel)]="movimento.importo">
+<input type="number" name="importo" [(ngModel)]="MovimentoBancario.importo">
+<br>
 <br>
 <button (click)="Aggiungi()">Aggiungi</button>
 </form>
@@ -15,7 +18,7 @@
 <br>
 <br>
 
-<table>
+<table *ngIf="tabella">
   <head>
     <tr>
       <th>Data</th>
@@ -25,11 +28,11 @@
     </tr>
   </head>
   <body>
-    <tr>
-      <td> {{}}  </td>
-      <td> {{}} </td>
-      <td> {{}} </td>
-      <td> {{}} </td>
+    <tr *ngFor="let p of MovimentoBancario">
+      <td> {{p.data}}  </td>
+      <td> {{p.descrizione}} </td>
+      <td> {{p.importo}} </td>
+      <td> {{p.importoInDollari}} </td>
       <button (click)="Elimina()">Elimina</button>
     </tr>
   </body>
