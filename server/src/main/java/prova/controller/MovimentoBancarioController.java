@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import prova.dto.MovimentoBancarioRequestDto;
-import prova.dto.MovimentoBancarioResponseDto;
+import prova.dto.MovimentoBancarioDto;
 import prova.service.MovimentoBancarioService;
 
 @RestController
@@ -22,7 +21,7 @@ public class MovimentoBancarioController {
 	
 	@RequestMapping("calcola-dollari")
 	@ResponseBody
-	public MovimentoBancarioResponseDto calcola(@RequestBody MovimentoBancarioRequestDto dto) {
+	public MovimentoBancarioDto calcola(@RequestBody MovimentoBancarioDto dto) {
 		return null;
 	}
 	
