@@ -67,7 +67,7 @@ input[type=text], select {
     table-layout: fixed;
     width: 100%;  
     text-align: center;
-    font-style:oblique;
+    font-style:normal;
   }
 
   tr,td,th{
