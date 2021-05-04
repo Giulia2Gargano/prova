@@ -2,6 +2,10 @@ package prova.dto;
 
 import prova.model.MovimentoBancario;
 
+/**
+ * Classe per la trasmissione dell'oggetto movimentoBancario
+ * tra client e server
+ * */
 public class MovimentoBancarioDto {
 
 	private MovimentoBancario movimento;
