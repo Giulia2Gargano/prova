@@ -7,6 +7,12 @@ import prova.service.MovimentoBancarioService;
 
 @Service
 public class MovimentoBancarioServiceImpl implements MovimentoBancarioService {
+	
+	/*
+	 * la classe  calcola i movimenti bancari
+	 * prende l'impporto in euro
+	 * è le li converte in dollari
+	 */
 
 	@Override
 	public MovimentoBancarioDto calcola(MovimentoBancarioDto dto) {
