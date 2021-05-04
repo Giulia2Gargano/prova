@@ -27,13 +27,14 @@
         <th>Descrizione</th>
         <th>Importo Euro</th>
         <th>Importo Dollari</th>
+        <th>Operazione</th>
       </tr>
       <tr *ngFor="let p of array">
         <td> {{p.data}} </td>
         <td> {{p.descrizione}} </td>
         <td> {{p.importo}} </td>
         <td> {{p.importoInDollari}} </td>
-        <button class="bottone" (click)="Elimina()">Elimina</button>
+        <td><button class="bottone" (click)="Elimina()">Elimina</button></td>
       </tr>
     </table>
   </body>
