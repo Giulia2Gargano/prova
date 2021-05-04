@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 import prova.dto.MovimentoBancarioDto;
 import prova.service.MovimentoBancarioService;
 
+/*
+ * Si occupa di gestire la richesta del RequestMapping "calcola-dollari" e utilizza una richiesta POST 
+ */
+
 @RestController
 @CrossOrigin("*")
 public class MovimentoBancarioController {
