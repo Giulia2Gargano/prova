@@ -4,7 +4,6 @@ import java.time.LocalDate;
 
 /**
  * Classe che rappresenta l'oggetto movimentoBancario
- * 
  * L'importo in dollari è inserito come attributo della classe,
  * arriva nullo al server che ne calcola il valore e lo ritorna al client
  * 
