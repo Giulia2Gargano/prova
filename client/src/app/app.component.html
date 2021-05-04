@@ -1,39 +1,54 @@
+<!-- IMPOSTAZONE SFONDO -->
 <div class="sfondo1">
   <header>
+    <!-- IMPOSTAZONE MENU -->
+    <div class="menu">
+      <a href="http://www.sirfinpa.it/">SirfinPA</a>
+    </div>
+    <!-- IMPOSTAZONE TITOLO -->
     <div class="titolo">
       <h1>Benvenuto</h1>
     </div>
   </header>
 
   <body>
+    <!-- CAMPI INPUT MOVIMENTI BANCARI -->
     <h3>Data</h3>
+    <!-- CAMPO DATA -->
     <input type="date" name="data" [(ngModel)]="movimentoBancario.data">
     <br>
     <br>
     <h3>Descrizione</h3>
+    <!-- CAMPO DESCRIZIONE -->
     <input type="text" name="descrizione" [(ngModel)]="movimentoBancario.descrizione">
     <br>
     <br>
-    <h3>Importo</h3>
-    <input type="number" name="importo" [(ngModel)]="movimentoBancario.importo">
+    <h3>Importo in euro</h3>
+    <!-- CAMPO IMPORTO IN EURO -->
+    <input type="number" name="importo " [(ngModel)]="movimentoBancario.importo">
     <br>
     <br>
+    <!-- BOTTONE PER AGGIUNGERE I CAMPI NELLA TABELLA -->
     <button class="bottone" (click)="aggiungi()">Aggiungi</button>
     <br>
     <br>
+    <br>
+    <!-- TABELLA MOVIMENTI BANCARI -->
     <table class="tabella" *ngIf="array.length>0">
       <tr>
         <th>Data</th>
         <th>Descrizione</th>
         <th>Importo Euro</th>
         <th>Importo Dollari</th>
+        <th>Operazione</th>
       </tr>
-      <tr *ngFor="let p of array">
+      <tr *ngFor="let p of array, index as i">
         <td> {{p.data}} </td>
         <td> {{p.descrizione}} </td>
         <td> {{p.importo}} </td>
         <td> {{p.importoInDollari}} </td>
-        <button class="bottone" (click)="Elimina()">Elimina</button>
+        <!-- BOTTONE PER ELIMINARE LA RIGA DELLA TABELLA -->
+        <td><button class="bottoneElim" (click)="Elimina(i)">Elimina</button></td>
       </tr>
     </table>
   </body>
