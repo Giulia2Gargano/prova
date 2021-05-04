@@ -20,7 +20,7 @@ input[type=text], select {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 12px;
     box-sizing: border-box;
   }
   
@@ -30,7 +30,7 @@ input[type=text], select {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 12px;
     box-sizing: border-box;
   }
 
@@ -40,7 +40,7 @@ input[type=text], select {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 12px;
     box-sizing: border-box;
   }
 
