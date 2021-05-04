@@ -3,22 +3,28 @@
 </div>
 <br>
 <body>
+  <!-- CAMPI INPUT MOVIMENTI BANCARI -->
   <h3>Data</h3>
+  <!-- CAMPO DATA -->
   <input type="date" name="data" [(ngModel)]="movimentoBancario.data">
   <br>
   <br>
   <h3>Descrizione</h3>
+  <!-- CAMPO DESCRIZIONE -->
   <input type="text" name="descrizione" [(ngModel)]="movimentoBancario.descrizione">
   <br>
   <br>
   <h3>Importo</h3>
+  <!-- CAMPO IMPORTO IN EURO -->
   <input type="number" name="importo" [(ngModel)]="movimentoBancario.importo">
   <br>
   <br>
+  <!-- BOTTONE PER AGGIUNGERE I CAMPI NELLA TABELLA -->
   <button class="bottone" (click)="aggiungi()">Aggiungi</button>
   <br>
   <br>
-  <table class="tabella" *ngIf="array.length>0">
+  <!-- TABELLA MOVIMENTI BANCARI -->
+  <table *ngIf="array.length>0">
     <tr>
       <th>Data</th>
       <th>Descrizione</th>
@@ -30,6 +36,7 @@
       <td> {{p.descrizione}} </td>
       <td> {{p.importo}} </td>
       <td> {{p.importoInDollari}} </td>
+      <!-- BOTTONE PER ELIMINARE LA RIGA DELLA TABELLA -->
       <button class="bottone" (click)="Elimina()">Elimina</button>
     </tr>
   </table>
