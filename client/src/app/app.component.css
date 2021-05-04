@@ -62,7 +62,9 @@ input[type=text], select {
     font-style:oblique;
   }
 
-  th,td {
-    border: 1.5 px solid black;
+  tr,td,th{
+
+    border-collapse: collapse;
+    border: 1.5px solid black;
   }
   
