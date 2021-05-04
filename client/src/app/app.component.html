@@ -1,32 +1,36 @@
+<div class="titolo">
+  <h1>Benvenuto</h1>
+</div>
+<br>
 <body>
-Data
-<input type="date" name="data" [(ngModel)]="movimentoBancario.data">
-<br>
-<br>
-Descrizione
-<input type="text" name="descrizione" [(ngModel)]="movimentoBancario.descrizione">
-<br>
-<br>
-Importo
-<input type="number" name="importo" [(ngModel)]="movimentoBancario.importo">
-<br>
-<br>
-<button class="bottone" (click)="aggiungi()">Aggiungi</button>
-<br>
-<br>
-<table *ngIf="array.length>0">
-  <tr>
-    <th>Data</th>
-    <th>Descrizione</th>
-    <th>Importo Euro</th>
-    <th>Importo Dollari</th>
-  </tr>
-  <tr *ngFor="let p of array">
-    <td> {{p.data}} </td>
-    <td> {{p.descrizione}} </td>
-    <td> {{p.importo}} </td>
-    <td> {{p.importoInDollari}} </td>
-    <button class="bottone" (click)="Elimina()">Elimina</button>
-  </tr>
-</table>
+  <h3>Data</h3>
+  <input type="date" name="data" [(ngModel)]="movimentoBancario.data">
+  <br>
+  <br>
+  <h3>Descrizione</h3>
+  <input type="text" name="descrizione" [(ngModel)]="movimentoBancario.descrizione">
+  <br>
+  <br>
+  <h3>Importo</h3>
+  <input type="number" name="importo" [(ngModel)]="movimentoBancario.importo">
+  <br>
+  <br>
+  <button class="bottone" (click)="aggiungi()">Aggiungi</button>
+  <br>
+  <br>
+  <table *ngIf="array.length>0">
+    <tr>
+      <th>Data</th>
+      <th>Descrizione</th>
+      <th>Importo Euro</th>
+      <th>Importo Dollari</th>
+    </tr>
+    <tr *ngFor="let p of array">
+      <td> {{p.data}} </td>
+      <td> {{p.descrizione}} </td>
+      <td> {{p.importo}} </td>
+      <td> {{p.importoInDollari}} </td>
+      <button class="bottone" (click)="Elimina()">Elimina</button>
+    </tr>
+  </table>
 </body>
